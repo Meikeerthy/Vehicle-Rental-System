@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Rental | SUVs</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #003366; /* Navy Blue */
+            text-align: center;
+            background: url('background.jpg') no-repeat center center/cover;
+        }
+
+        /* Header */
+        header {
+            padding: 20px;
+        }
+
+        /* Navigation Menu */
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #003366; /* Navy Blue */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* SUVs Section */
+        .suvs-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            gap: 20px;
+        }
+
+        .suv-box {
+            background: rgba(255, 255, 255, 0.85); /* Light Transparent Background */
+            padding: 20px;
+            border-radius: 5px;
+            width: 300px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .suv-box img {
+            width: 100%; /* Ensures the image fills the container width */
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Prevents distortion while maintaining aspect ratio */
+            border-radius: 5px;
+        }
+
+        .suv-box h3 {
+            margin: 10px 0;
+            color: #003366; /* Navy Blue */
+        }
+
+        .suv-box p {
+            font-size: 0.9em;
+            color: #003366; /* Navy Blue */
+        }
+
+        .price {
+            font-size: 1.2em;
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .btn {
+            background: #003366;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #002255;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #003366; /* Navy Blue */
+        }
+
+        .back-home {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            background: #003366;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .back-home:hover {
+            background: #002255;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Available SUVs for Rent</h1>
+    <nav>
+        <ul>
+            <li><a href="indexAfterLS.html">Home</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="reviews.html">User Reviews</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="suvs-container">
+    <div class="suv-box">
+        <img src="ToyotaFortuner.jpg" alt="Toyota Fortuner">
+        <h3>Toyota Fortuner</h3>
+        <p>Spacious and powerful SUV for long trips.</p>
+        <p class="price">$75/day</p>
+        <a href="booking.html" class="btn">Rent Now</a>
+    </div>
+
+    <div class="suv-box">
+        <img src="FordExplorer.jpg" alt="Ford Explorer">
+        <h3>Ford Explorer</h3>
+        <p>Comfortable and stylish for family travel.</p>
+        <p class="price">$85/day</p>
+        <a href="booking.html" class="btn">Rent Now</a>
+    </div>
+
+    <div class="suv-box">
+        <img src="JeepWrangler.jpg" alt="Jeep Wrangler">
+        <h3>Jeep Wrangler</h3>
+        <p>Perfect for off-road adventures and tough terrains.</p>
+        <p class="price">$95/day</p>
+        <a href="booking.html" class="btn">Rent Now</a>
+    </div>
+
+    <div class="suv-box">
+        <img src="MercedesBenzGLE.jpg" alt="Mercedes GLE">
+        <h3>Mercedes-Benz GLE</h3>
+        <p>Luxury SUV with premium comfort and tech.</p>
+        <p class="price">$120/day</p>
+        <a href="booking.html" class="btn">Rent Now</a>
+    </div>
+</section>
+
+<footer>
+    <a href="index.html" class="back-home">Back to Home</a>
+    <p>&copy; 2025 Vehicle Rental. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

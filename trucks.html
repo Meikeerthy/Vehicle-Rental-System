@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Rental | Trucks</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #003366; /* Navy Blue */
+            text-align: center;
+            background: url('background.jpg') no-repeat center center/cover;
+        }
+
+        /* Header */
+        header {
+            padding: 20px;
+        }
+
+        /* Navigation Menu */
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #003366; /* Navy Blue */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Trucks Section */
+        .trucks-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            gap: 20px;
+        }
+
+        .truck-box {
+            background: rgba(255, 255, 255, 0.85); /* Light Transparent Background */
+            padding: 20px;
+            border-radius: 5px;
+            width: 300px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .truck-box img {
+            width: 100%; /* Ensures the image fills the container width */
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Prevents distortion while maintaining aspect ratio */
+            border-radius: 5px;
+        }
+
+        .truck-box h3 {
+            margin: 10px 0;
+            color: #003366; /* Navy Blue */
+        }
+
+        .truck-box p {
+            font-size: 0.9em;
+            color: #003366; /* Navy Blue */
+        }
+
+        .price {
+            font-size: 1.2em;
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .btn {
+            background: #003366;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #002255;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #003366; /* Navy Blue */
+        }
+
+        .back-home {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            background: #003366;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .back-home:hover {
+            background: #002255;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Available Trucks for Rent</h1>
+    <nav>
+        <ul>
+            <li><a href="indexAfterLS.html">Home</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="reviews.html">User Reviews</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="trucks-container">
+    <div class="truck-box">
+        <img src="FordF150.jpg" alt="Ford F-150">
+        <h3>Ford F-150</h3>
+        <p>Reliable pickup truck for light transport.</p>
+        <p class="price">$65/day</p>
+        <a href="booking.html" class="btn">Rent Now</a>
+    </div>
+
+    <div class="truck-box">
+        <img src="IsuzuNPR.jpg" alt="Isuzu NPR">
+        <h3>Isuzu NPR</h3>
+        <p>Medium-duty truck for cargo and delivery.</p>
+        <p class="price">$90/day</p>
+        <a href="booking.html" class="btn">Rent Now</a>
+    </div>
+
+    <div class="truck-box">
+        <img src="VolvoFH.jpg" alt="Volvo FH">
+        <h3>Volvo FH</h3>
+        <p>Heavy-duty truck perfect for long hauls.</p>
+        <p class="price">$130/day</p>
+        <a href="booking.html" class="btn">Rent Now</a>
+    </div>
+
+    <div class="truck-box">
+        <img src="MercedesActros.jpg" alt="Mercedes Actros">
+        <h3>Mercedes Actros</h3>
+        <p>Premium truck with high performance.</p>
+        <p class="price">$150/day</p>
+        <a href="booking.html" class="btn">Rent Now</a>
+    </div>
+</section>
+
+<footer>
+    <a href="index.html" class="back-home">Back to Home</a>
+    <p>&copy; 2025 Vehicle Rental. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

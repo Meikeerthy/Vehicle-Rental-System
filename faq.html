@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs | Vehicle Rental</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #003366; /* Navy Blue */
+            text-align: center;
+            background: url('background.jpg') no-repeat center center/cover;
+        }
+
+        /* Header Styling */
+        header {
+            color: #003366; /* Navy Blue */
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #003366; /* Navy Blue */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* FAQ Section */
+        .faq {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.8); /* Light Transparent Background */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .faq h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #003366; /* Navy Blue */
+        }
+
+        /* Accordion Style */
+        .faq-item {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .faq-item h3 {
+            font-size: 1.2em;
+            padding: 10px;
+            margin: 0;
+            color: #003366; /* Navy Blue */
+        }
+
+        .faq-item p {
+            display: none;
+            padding: 10px;
+            font-size: 1.1em;
+            color: #003366; /* Navy Blue */
+        }
+
+        /* Back to Home Button */
+        .back-home {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            font-size: 1.2em;
+            text-align: center;
+            background: #003366; /* Navy Blue */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-home:hover {
+            background: #002255; /* Darker Navy Blue */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            color: #003366; /* Navy Blue */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="reviews.html">User Reviews</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="faq">
+    <h2>Got Questions? We Have Answers! 🤔</h2>
+
+    <div class="faq-item">
+        <h3>🚗 What types of vehicles do you offer?</h3>
+        <p>We offer a wide range of vehicles, including economy cars, SUVs, luxury cars, and vans for rental.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>📜 What documents are required to rent a vehicle?</h3>
+        <p>You will need a valid driver's license, a government-issued ID, and a credit card for payment.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>💰 What are the payment options?</h3>
+        <p>We accept credit cards, debit cards, and online payments. Cash payments are not accepted.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>🕒 What is the minimum rental period?</h3>
+        <p>The minimum rental period is 24 hours. We also offer weekly and monthly rental packages.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>🛠️ What happens in case of a breakdown?</h3>
+        <p>All our rentals come with 24/7 roadside assistance. Call our helpline, and we'll send help immediately.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>❌ Can I cancel my reservation?</h3>
+        <p>Yes, you can cancel up to 24 hours before your rental start time without any fees.</p>
+    </div>
+
+    <!-- Back to Home Button -->
+    <a href="index.html" class="back-home">⬅ Back to Home</a>
+</section>
+
+<footer>
+    <p>&copy; 2025 Vehicle Rental. All rights reserved.</p>
+</footer>
+
+<script>
+    // Accordion effect for FAQ items
+    document.querySelectorAll('.faq-item h3').forEach((item) => {
+        item.addEventListener('click', function() {
+            let answer = this.nextElementSibling;
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

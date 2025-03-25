@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Vehicle Rental</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #003366; /* Navy Blue */
+            text-align: center;
+            background: url('background.jpg') no-repeat center center/cover;
+        }
+
+        /* Header Styling */
+        header {
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #003366; /* Navy Blue */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 50px 20px;
+        }
+
+        .contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #003366; /* Navy Blue */
+        }
+
+        .contact p {
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: 0 auto 20px;
+            color: #003366; /* Navy Blue */
+        }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            text-align: left;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            color: #003366;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 2px solid #003366;
+            border-radius: 5px;
+            background: white;
+            color: #003366;
+            text-align: left;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: #003366;
+            text-align: left;
+        }
+
+        .contact-form button {
+            background: #003366;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 10px;
+            font-weight: bold;
+            display: block;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .contact-form button:hover {
+            background: #002255;
+        }
+
+        /* Contact Details */
+        .contact-details {
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.8);
+            color: #003366;
+        }
+
+        .contact-details h3 {
+            color: #003366;
+        }
+
+        .contact-details p {
+            font-size: 1.1em;
+        }
+
+        /* Map */
+        .map {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        /* Back to Home Button */
+        .back-home {
+            display: inline-block;
+            background: #003366;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .back-home:hover {
+            background: #002255;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            color: #003366;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Us</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="reviews.html">User Reviews</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="contact">
+    <h2>Get in Touch</h2>
+    <p>Have questions? Need assistance? Contact us and our team will be happy to help!</p>
+
+    <div class="contact-form">
+        <form action="msgsent.html" method="get"> <!-- Redirects to Message Sent Page -->
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<section class="contact-details">
+    <h3>📍 Our Location</h3>
+    <p>123 Main Street, New York, NY 10001, USA</p>
+
+    <h3>📞 Call Us</h3>
+    <p>+1 234 567 890</p>
+
+    <h3>📧 Email Us</h3>
+    <p>support@vehiclerental.com</p>
+</section>
+
+<!-- Map Section -->
+<section class="map">
+    <h3>📍 Find Us on Google Maps</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.975255341712!2d-73.83400672397175!3d40.762568971385974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2600f928bb159%3A0x939edd86cd71a6ef!2s123%20Main%20St%2C%20Flushing%2C%20NY%2011354%2C%20USA!5e0!3m2!1sen!2sin!4v1742807423591!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- Styled Back to Home Button -->
+    <a href="index.html" class="back-home">⬅ Back to Home</a>
+</section>
+
+<footer>
+    <p>&copy; 2025 Vehicle Rental. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

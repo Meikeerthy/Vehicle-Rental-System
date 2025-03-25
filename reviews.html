@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Reviews | Vehicle Rental</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #003366; /* Navy Blue */
+            text-align: center;
+            background: url('background.jpg') no-repeat center center/cover;
+        }
+
+        /* Header */
+        header {
+            padding: 20px;
+        }
+
+        /* Navigation Menu */
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #003366; /* Navy Blue */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Reviews Container */
+        .reviews-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.85); /* Light Transparent Background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        h2 {
+            text-align: center;
+            color: #003366; /* Navy Blue */
+        }
+
+        /* Review Item */
+        .review {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+
+        .review h3 {
+            margin: 0;
+            color: #003366; /* Navy Blue */
+        }
+
+        .review p {
+            font-size: 0.95em;
+            color: #003366; /* Navy Blue */
+        }
+
+        .rating {
+            font-size: 1.2em;
+        }
+
+        /* Review Form */
+        .review-form {
+            margin-top: 30px;
+        }
+
+        .review-form input,
+        .review-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .review-form textarea {
+            height: 100px;
+        }
+
+        .btn {
+            background: #003366;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #002255;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #003366; /* Navy Blue */
+        }
+
+        /* Back to Home Button (Centered in Footer) */
+        .back-home {
+            display: inline-block;
+            background: #003366;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .back-home:hover {
+            background: #002255;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>User Reviews</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="reviews.html">User Reviews</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="reviews-container">
+    <h2>What Our Customers Say</h2>
+
+    <div class="review">
+        <h3>John Doe</h3>
+        <p class="rating">⭐⭐⭐⭐⭐</p>
+        <p>"Amazing experience! The car was in excellent condition, and the booking process was seamless. Highly recommended!"</p>
+    </div>
+
+    <div class="review">
+        <h3>Sarah Smith</h3>
+        <p class="rating">⭐⭐⭐⭐</p>
+        <p>"Great service! The vehicle was clean, and the staff was very helpful. Will rent again!"</p>
+    </div>
+
+    <div class="review">
+        <h3>Mike Johnson</h3>
+        <p class="rating">⭐⭐⭐⭐⭐</p>
+        <p>"Best rental experience ever! The electric cars were top-notch, and the pricing was fair."</p>
+    </div>
+
+    <h2>Leave a Review</h2>
+    <form class="review-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="number" min="1" max="5" placeholder="Rating (1-5)" required>
+        <textarea placeholder="Write your review..." required></textarea>
+        <button type="submit" class="btn">Submit Review</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2025 Vehicle Rental. All rights reserved.</p>
+    <a href="index.html" class="back-home">⬅ Back to Home</a>
+</footer>
+
+</body>
+</html>
